@@ -1,0 +1,21 @@
+<h1>dbz esta en vivo </h1>
+<hr>
+<div class="row">
+
+  <div class="col">
+
+  <dbz-list [characterList]="characters"
+   (onDelete)="onDeleteCharacter($event)" ></dbz-list>
+
+
+    <!-- <app-dbz-add-character></app-dbz-add-character> -->
+  </div>
+
+  <div class="col">
+
+    <app-dbz-add-character
+     (onNewCharacter)="onNewCaracter($event)"></app-dbz-add-character>
+
+  </div>
+
+</div>
